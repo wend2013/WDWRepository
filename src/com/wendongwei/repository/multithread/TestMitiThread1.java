@@ -43,7 +43,8 @@ public class TestMitiThread1 implements Runnable
 		Thread thread2 = new Thread(test);
 		thread1.start();
 		thread2.start();
-		// start()方法的调用后并不是立即执行多线程代码，而是使得该线程变为可运行态（Runnable），什么时候运行是由操作系统决定的。
+		// start()方法的调用后并不是立即执行多线程代码，
+		// 而是使得该线程变为可运行态（Runnable），什么时候运行是由操作系统决定的。
 		System.out.println(Thread.currentThread().getName() + " 线程运行结束!");
 	}
 
