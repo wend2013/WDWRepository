@@ -17,12 +17,12 @@ public class TestMitiThread1 implements Runnable
 	public void run()
 	{
 		System.out.println(Thread.currentThread().getName() + " 线程运行开始!");
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 100000000; i++)
 		{
 			System.out.println(i + " " + Thread.currentThread().getName());
 			try
 			{
-				Thread.sleep((int) Math.random() * 10);
+				Thread.sleep((int) Math.random() * 100);
 			}
 			catch (InterruptedException e)
 			{
